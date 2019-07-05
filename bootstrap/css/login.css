@@ -1,0 +1,68 @@
+/*---------------------------------------------
+
+	Folha de estilos CSS
+
+---------------------------------------------*/
+
+.header-box{
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	height: 78px;
+	line-height: 78px;
+	margin-bottom: 20px;
+}
+	.header-box h1{
+		line-height: 78px;
+		margin: 0px;
+		padding: 0px;
+		font-size: 26px;
+	}
+
+/*---------------------------------------------
+	Login
+---------------------------------------------*/
+.form-login{
+	text-align: left;
+	width: 300px;
+}
+
+.erro{
+    margin-top: 5rem;
+	vertical-align: middle;
+	border: 1px solid #FFF;
+	min-height: 72px;
+	width: 300px;
+}
+
+label{
+	margin-bottom: 0px;
+}
+/*-------------------------------------------*/
+.informativo {
+    margin-top: 5rem;
+    padding: 0.5rem 5rem 2rem;
+    background: #FFF;
+}
+
+.informativo > h1 {
+    text-align: center;
+    font-size: 35pt;
+    margin-bottom: 5rem;
+}
+
+.conteudo_info {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.info {
+    margin-bottom: 1rem;
+    background-color: #FFF;
+    padding: 0;
+    width: 400px;
+    height: auto;
+    border: 1px solid #21e071;
+    border-radius: 0.55rem;
+    box-shadow: 0px 0px 20px rgba(59, 78, 63, 0.55);
+}

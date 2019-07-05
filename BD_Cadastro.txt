@@ -1,0 +1,44 @@
+create table multa(
+	
+	id_multa integer not null,
+	valor DOUBLE (4,2),
+	primary key(id_multa)
+);
+
+
+create table usuario(
+
+	id_nome integer not null,
+	nome  varchar (50),
+	cpf varchar(11),	
+	login varchar(30),
+	senha varchar(30),
+	
+	primary key(id_nome)
+);
+
+create table livro(
+	id_livros integer not null,
+	exemplar varchar (30),	
+	autor	varchar	(50),
+	ano	integer (4),
+	edicao	varchar	(10),
+	disponibilidade	varchar(4),
+
+	primary key(id_livros)
+);
+
+create table emprestimo(
+
+	id_emp integer not null,
+	cod_usuario integer not null,
+	cod_livro integer not null,
+	data_emprestimo varchar (10),
+	data_devolucao varchar(10),
+
+	primary key(id_emp),
+	foreign key(cod_usuario) references usuario on delete cascade,
+ 	foreign key(cod_livro) references livro on delete cascade
+);
+
+
